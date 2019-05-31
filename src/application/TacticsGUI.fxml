@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDrawer?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<Pane id="dark" fx:id="DataPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="920.0" prefWidth="1539.0" stylesheets="@../../resource/dark-theme.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Tactics_Controller">
+   <children>
+      <JFXDrawer fx:id="drawer" blendMode="SRC_ATOP" defaultDrawerSize="200.0" layoutX="4.0" layoutY="54.0" prefHeight="544.0" prefWidth="202.2" />
+      <ImageView fx:id="hamburger" fitHeight="56.0" fitWidth="40.0" layoutX="26.0" layoutY="9.0" onMouseClicked="#initialize" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../resource/menu.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="216.0" layoutY="28.0" text="Basic Formations" textFill="#e7ff49">
+         <font>
+            <Font name="System Bold" size="35.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="916.0" fitWidth="997.0" layoutX="527.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../resource/fieldTactics.jpg" />
+         </image>
+      </ImageView>
+      <Circle fx:id="dp1" fill="#2197ff" layoutX="698.0" layoutY="738.0" onMouseClicked="#playerOpacityChangerAction" opacity="0.17" radius="26.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="dp2" fill="#2197ff" layoutX="818.0" layoutY="656.0" onMouseClicked="#playerOpacityChangerAction" opacity="0.17" radius="26.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="gk" fill="#ea3737" layoutX="1027.0" layoutY="798.0" radius="26.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="dp4" fill="#2197ff" layoutX="1228.0" layoutY="656.0" onMouseClicked="#playerOpacityChangerAction" opacity="0.17" radius="26.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="dp5" fill="#2197ff" layoutX="1345.0" layoutY="743.0" onMouseClicked="#playerOpacityChangerAction" opacity="0.17" radius="26.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="dp3" fill="#2197ff" layoutX="1024.0" layoutY="625.0" onMouseClicked="#playerOpacityChangerAction" opacity="0.17" radius="26.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="mp1" fill="#2197ff" layoutX="615.0" layoutY="348.0" onMouseClicked="#playerOpacityChangerAction" opacity="0.17" radius="26.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="mp2" fill="#2197ff" layoutX="818.0" layoutY="346.0" onMouseClicked="#playerOpacityChangerAction" opacity="0.17" radius="26.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="mp4" fill="#2197ff" layoutX="1228.0" layoutY="346.0" onMouseClicked="#playerOpacityChangerAction" opacity="0.17" radius="26.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="mp5" fill="#2197ff" layoutX="1428.0" layoutY="346.0" onMouseClicked="#playerOpacityChangerAction" opacity="0.17" radius="26.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="mp3" fill="#2197ff" layoutX="1026.0" layoutY="345.0" onMouseClicked="#playerOpacityChangerAction" opacity="0.17" radius="26.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="ap1" fill="#2197ff" layoutX="610.0" layoutY="192.0" onMouseClicked="#playerOpacityChangerAction" opacity="0.17" radius="26.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="ap2" fill="#2197ff" layoutX="792.0" layoutY="115.0" onMouseClicked="#playerOpacityChangerAction" opacity="0.17" radius="26.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="ap4" fill="#2197ff" layoutX="1280.0" layoutY="118.0" onMouseClicked="#playerOpacityChangerAction" opacity="0.17" radius="26.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="ap5" fill="#2197ff" layoutX="1440.0" layoutY="201.0" onMouseClicked="#playerOpacityChangerAction" opacity="0.17" radius="26.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="ap3" fill="#2197ff" layoutX="1026.0" layoutY="65.0" onMouseClicked="#playerOpacityChangerAction" opacity="0.17" radius="26.0" stroke="BLACK" strokeType="INSIDE" />
+      <Label fx:id="basicFormation1" layoutX="312.0" layoutY="130.0" onMouseClicked="#makeBasicFormationAction" text="4-4-2" textFill="#e261ff">
+         <font>
+            <Font size="29.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Label fx:id="basicFormation2" layoutX="312.0" layoutY="220.0" onMouseClicked="#makeBasicFormationAction" text="4-3-3" textFill="#e261ff">
+         <font>
+            <Font size="29.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Label fx:id="basicFormation3" layoutX="312.0" layoutY="310.0" onMouseClicked="#makeBasicFormationAction" text="3-4-3" textFill="#e261ff">
+         <font>
+            <Font size="29.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Label fx:id="basicFormation4" layoutX="312.0" layoutY="410.0" onMouseClicked="#makeBasicFormationAction" text="3-6-1" textFill="#e261ff">
+         <font>
+            <Font size="29.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Label fx:id="basicFormation5" layoutX="312.0" layoutY="500.0" onMouseClicked="#makeBasicFormationAction" text="4-5-1" textFill="#e261ff">
+         <font>
+            <Font size="29.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <JFXButton fx:id="resetFormationButton" layoutX="236.0" layoutY="596.0" onAction="#resetAction" prefHeight="50.0" prefWidth="219.0" text="Reset Formation">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </JFXButton>
+      <Label fx:id="finalFormation" layoutX="25.0" layoutY="755.0" textFill="WHITE">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="saveFormationButton" layoutX="236.0" layoutY="666.0" onAction="#saveAction" prefHeight="50.0" prefWidth="219.0" text="Save Formation">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </JFXButton>
+   </children>
+</Pane>

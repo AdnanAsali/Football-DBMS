@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXDrawer?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<Pane id="dark" fx:id="DataPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="920.0" prefWidth="1539.0" stylesheets="@../../resource/dark-theme.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Coaching_Controller">
+   <children>
+      <JFXDrawer fx:id="drawer" blendMode="SRC_ATOP" defaultDrawerSize="200.0" layoutX="4.0" layoutY="54.0" prefHeight="544.0" prefWidth="202.2" />
+      <ImageView fx:id="hamburger" fitHeight="56.0" fitWidth="40.0" layoutX="26.0" layoutY="9.0" onMouseClicked="#initialize" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Desktop/DataBase-Course/menu.png" />
+         </image>
+      </ImageView>
+      <Rectangle fx:id="rect3" arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="360.0" layoutX="266.0" layoutY="424.0" onMouseClicked="#trainingRectAction" onMouseMoved="#changeColor" stroke="BLACK" strokeType="INSIDE" width="533.0" />
+      <Rectangle fx:id="rect1" arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="360.0" layoutX="266.0" layoutY="54.0" onMouseClicked="#tacticsRectAction" onMouseMoved="#changeColor" stroke="BLACK" strokeType="INSIDE" width="533.0" />
+      <Rectangle fx:id="rect4" arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="360.0" layoutX="806.0" layoutY="424.0" onMouseClicked="#ratingRectAction" onMouseMoved="#changeColor" stroke="BLACK" strokeType="INSIDE" width="533.0" />
+      <Rectangle fx:id="rect2" arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="360.0" layoutX="806.0" layoutY="54.0" onMouseClicked="#performanceRectAction" onMouseMoved="#changeColor" stroke="BLACK" strokeType="INSIDE" width="533.0" />
+      <ImageView fitHeight="102.0" fitWidth="108.0" layoutX="477.0" layoutY="179.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../resource/tactics.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="84.0" fitWidth="100.0" layoutX="1044.0" layoutY="193.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../resource/performance2.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="97.0" fitWidth="108.0" layoutX="476.0" layoutY="545.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../resource/training.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="137.0" fitWidth="164.0" layoutX="1013.0" layoutY="524.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../resource/rating%20(1).png" />
+         </image>
+      </ImageView>
+      <Label layoutX="491.0" layoutY="308.0" text="Tactics" textFill="#f5ff98">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="1018.0" layoutY="318.0" text="Performance" textFill="#f5ff98">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="474.0" layoutY="658.0" text="Trainings" textFill="#f5ff98">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="1041.0" layoutY="658.0" text="Rating" textFill="#f5ff98">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

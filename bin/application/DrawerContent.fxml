@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox id="dark" fx:id="DataPane" spacing="10.0" stylesheets="@../../resource/dark-theme.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.HomePageController">
+   <children>
+      <JFXButton fx:id="MyTeam" onAction="#MyTeamAction" prefHeight="40.0" prefWidth="200.0" text="My team" />
+      <JFXButton fx:id="Data_entry" onAction="#Data_entryAction" prefHeight="40.0" prefWidth="200.0" text="Data Entry" />
+      <JFXButton fx:id="Upcoming_events" onAction="#Upcoming_eventsAction" prefHeight="40.0" prefWidth="200.0" text="Upcoming Events" />
+      <JFXButton fx:id="Stadium" onAction="#stadiumAction" prefHeight="40.0" prefWidth="200.0" text="Update" />
+      <JFXButton fx:id="Ultimate_Team" onAction="#Ultimate_TeamAction" prefHeight="40.0" prefWidth="200.0" text="Ultimate Team" />
+      <JFXButton fx:id="coaching" onAction="#coachingAction" prefHeight="40.0" prefWidth="200.0" text="Coaching" />
+      <JFXButton fx:id="Purchase_Players" onAction="#Purchase_PlayersAction" prefHeight="40.0" prefWidth="200.0" text="Purchase Players" />
+      <JFXButton fx:id="Media" onAction="#MediaAction" prefHeight="40.0" prefWidth="200.0" text="Media" />
+      <JFXButton fx:id="About" onAction="#aboutAction" prefHeight="40.0" prefWidth="202.0" text="About" />
+      <JFXButton fx:id="exit" onAction="#exitAction" prefHeight="40.0" prefWidth="200.0" text="Exit" />
+   </children>
+</VBox>

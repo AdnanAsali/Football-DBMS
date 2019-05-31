@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXDrawer?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="DataPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="920.0" prefWidth="1539.0" stylesheets="@../../resource/dark-theme.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AboutController">
+   <children>
+      <JFXDrawer fx:id="drawer" layoutX="8.0" layoutY="48.0" prefHeight="544.0" prefWidth="202.2" />
+      <Label fx:id="aboutDes" layoutX="166.0" layoutY="52.0" prefHeight="84.0" prefWidth="513.0" text="About The Project " textFill="#99ff4d">
+         <font>
+            <Font name="Agency FB" size="51.0" />
+         </font>
+      </Label>
+      <TextArea editable="false" layoutX="243.0" layoutY="172.0" prefHeight="400.0" prefWidth="1036.0" text="This is our Football Data Base Management System , Our DBMS is targeting all kinds of football clubs,&#10;a football club (such as Barcelona or local Palestinian clubs),&#10;has a huge stack of members, staff, players, coaches, so the client will be the manager of this football club.&#10;&#10;Our software will help the client in organizing and storing and sorting the data of the club and secure it&#10; using specific algorithms.&#10;Without a database for a football club, the data of club will be written on papers on any unreliable resource&#10; with zero security,&#10;data can disappear in multiple ways or be &#10;stolen easily especially the sensitive part when we talk about money or wages or any financial aspect of their organization.&#10;Thus our DBMS will make the trusted user reach the any kind of data with a click away,&#10;because the club's data will be sorted in a professional manner, which will enhance the &#10;readability and manipulation of data and changing it won't be as tiring as before. &#10;In addition, the financial aspect will be organized in a way that will make money &#10;transactions work all together and change accordingly.">
+         <font>
+            <Font name="Franklin Gothic Demi" size="18.0" />
+         </font>
+      </TextArea>
+      <Label layoutX="1201.0" layoutY="591.0" prefHeight="43.0" prefWidth="121.0" text="v1.0.0" textFill="#cacaca">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="hamburger" fitHeight="42.0" fitWidth="41.0" layoutX="24.0" layoutY="19.0" onMouseClicked="#initialize" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../resource/menu.png" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>

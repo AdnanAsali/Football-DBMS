@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDrawer?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane id="dark" fx:id="DataPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="920.0" prefWidth="1539.0" stylesheets="@../../resource/dark-theme.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MyTeamController">
+   <children>
+      <JFXDrawer id="Dark" fx:id="drawer" defaultDrawerSize="300.0" layoutX="9.0" layoutY="59.0" prefHeight="544.0" prefWidth="202.2" stylesheets="@dark-theme.css" />
+      <TableView fx:id="listPlayersInfoTable" layoutX="212.0" layoutY="12.0" onMouseClicked="#clickItem" prefHeight="711.0" prefWidth="1195.0">
+      </TableView>
+      <ImageView fx:id="hamburger" fitHeight="37.0" fitWidth="45.0" layoutX="18.0" layoutY="13.0" onMouseClicked="#initialize" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../resource/menu.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="deleteButt" layoutX="1099.0" layoutY="776.0" onAction="#deleteAction" prefHeight="69.0" prefWidth="225.0" text="Delete Selected Player">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+   </children>
+</Pane>

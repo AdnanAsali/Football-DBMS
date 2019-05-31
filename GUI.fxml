@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <children>
+      <Pane prefHeight="531.0" prefWidth="702.0">
+         <children>
+            <TextField fx:id="idfield" layoutX="139.0" layoutY="202.0" />
+            <TextField fx:id="travelfield" layoutX="139.0" layoutY="260.0" />
+            <Text layoutX="58.0" layoutY="155.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Table" />
+            <Text layoutX="67.0" layoutY="219.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID" />
+            <TextField fx:id="namefield" layoutX="433.0" layoutY="138.0" />
+            <TextField fx:id="salaryfield" layoutX="433.0" layoutY="260.0" />
+            <TextField fx:id="nationfield" layoutX="433.0" layoutY="317.0" />
+            <TextField fx:id="joinfield" layoutX="433.0" layoutY="370.0" />
+            <TextField fx:id="levelfield" layoutX="139.0" layoutY="317.0" />
+            <TextField fx:id="hourfield" layoutX="433.0" layoutY="202.0" />
+            <TextField fx:id="deptfield" layoutX="139.0" layoutY="370.0" />
+            <TextField fx:id="tablefield" layoutX="139.0" layoutY="138.0" />
+            <Text layoutX="60.0" layoutY="277.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Travel Fee" />
+            <Text layoutX="69.0" layoutY="334.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Level" />
+            <Text layoutX="55.0" layoutY="387.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Department" />
+            <Text layoutX="372.0" layoutY="155.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name" />
+            <Text layoutX="329.0" layoutY="220.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hours Worked" />
+            <Text layoutX="362.0" layoutY="277.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Salary" />
+            <Text layoutX="343.0" layoutY="334.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nationality" />
+            <Text layoutX="339.0" layoutY="387.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Joined Since" />
+            <Label layoutX="136.0" layoutY="37.0" text="Data Entry For The Employees Of Club" textFill="#8f1919">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Button fx:id="addbutton" layoutX="313.0" layoutY="444.0" mnemonicParsing="false" onAction="#AddOnAction" text="Add" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
