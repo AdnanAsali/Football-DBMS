@@ -20,4 +20,6 @@ The project contains the following Mechanisms and Functions :
 - About Page.
  
  
+## For a video of the project please click the image of the -media page- of the project to go the youtube video in the README.md file
+ 
 [![IMAGE ALT TEXT HERE](https://user-images.githubusercontent.com/36306586/58726557-bd1ea980-83ea-11e9-9d44-e8d6ce1d2cf9.png)](http://www.youtube.com/watch?v=Opc4garDQuo&feature=youtu.be)
